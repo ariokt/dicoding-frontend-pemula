@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+nav {
+	background-color: #00a2c6;
+	padding: 5px;
+}
+
+nav a {
+	font-size: 18px;
+	font-weight: 400px;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+h1, h2, h3 {
+	color: #00ff84;
+}
+
+.f-image {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 60px;
+	background-color: #00c8eb;
+	text-align: center;
+	color: white;
+}
+
+.profile header {
+	text-align: center;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #00a2c6;
+	color: white;
+	font-weight: bold;
+}
+
+#content {
+	float: left;
+	width: 70%;
+}
+
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	#content, aside {
+		width: 100%;
+		padding: 0;
+		height: auto;
+	}
+} 

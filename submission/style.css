@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rokkitt', serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background-color: #8c0000;
+}
+
+
+.flex-row {
+	display: flex;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	float: right;
+	margin-right: 10%;
+}
+
+.navigation li {
+	list-style: none;
+}
+
+.navigation a {
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navigation a:hover {
+	color: black;
+	background-color: white;
+}
+
+.info {
+	background-color: black;
+	height: 100vh;
+	color: white;
+	padding: 0 5%;
+}
+
+.artikel {
+	padding: 20px;
+	width: 70%;
+}
+
+.artikel h1 {
+	font-size: 50px;
+}
+
+article {
+	border-radius: 5px;
+	background-color: cornflowerblue;
+	width: 300px;
+	height: auto;
+	margin: 0 30px 20px 0;
+	padding: 10px;
+}
+
+article > h2,p,li {
+	color: black;
+}
+
+article > ul {
+	padding-left: 10px;
+	list-style: square;
+}
+
+aside {
+	margin-top: 10%;
+}
+
+.photos {
+	width: 300px;
+	text-align: center;
+	background-color: cornflowerblue;
+	border-radius: 5px;
+	color: black;
+	padding: 20px 0;
+}
+
+.myphoto {
+	border-radius: 50%;
+}
+
+footer {
+	background-color: #8c0000;
+}
+
+footer div {
+	text-align: center;
+}
+
+.contact {
+	margin: 0 auto;
+}
+
+.contact li {
+	list-style: none;
+	margin-right: 10px;
+}
+
+.contact a:hover {
+	background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+	.info div {
+		display: block;
+		width: 100%;
+	}
+
+	.info {
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	article {
+		margin: 15px auto;
+		max-width: 100%;
+	}
+} 
